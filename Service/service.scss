@@ -1,0 +1,127 @@
+.service__title{
+  //font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+  color: #2f318b;
+  margin-bottom: 30px;
+}
+.comments{
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  &__card{
+    max-width: 460px;
+    //background: #151515;
+    background: #444444;
+    padding: 30px;
+    border-radius: 15px;
+    //color: white;
+    &-title{
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 120%;
+      color: #F1F1F1;
+      position: relative;
+      &:before{
+        content: '';
+        height: 2px;
+        width: 60px;
+        background-color: #ed2d34;
+        position: absolute;
+        bottom: -10px;
+      }
+    }
+    &-text{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: #F1F1F1;
+    }
+    &-btn{
+      width: 189px;
+      height: 54px;
+      background: #F1F1F1;
+      border-radius: 65px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #151515;
+      cursor: pointer;
+    }
+  }
+
+  &__form{
+    display: none;
+    padding: 40px 0;
+    //display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: flex-start;
+    &.active{
+      display: flex;
+    }
+  }
+
+
+
+}
+
+.questions{
+  display: flex;
+  justify-content: space-between;
+  &-left{
+    width: 40%;
+  }
+  &-right{
+    width: 55%;
+  }
+  &-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 110%;
+    color: #2f318b ;
+    margin-bottom: 25px;
+    position: relative;
+    &:before{
+      content: '';
+      height: 2px;
+      width: 60px;
+      background-color: #ed2d34;
+      position: absolute;
+      bottom: -10px;
+    }
+  }
+  &-subtitle{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    //position: relative;
+    //&:before{
+    //  content: '';
+    //  height: 2px;
+    //  width: 60px;
+    //  background-color: #ed2d34;
+    //  position: absolute;
+    //  bottom: -10px;
+    //}
+  }
+  &-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    margin-bottom: 40px;
+    max-width: 360px;
+  }
+}
